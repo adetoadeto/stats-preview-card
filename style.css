@@ -103,16 +103,15 @@ body {
 }
 
 .attribution {color: white; font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a {color: white; text-decoration: none;}
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .container {
-        margin-top: 3rem;
+       padding: 15rem 0;
     }
     .content {
-        position: absolute;
         flex-direction: column-reverse;
-        top: 15%;
+        max-width: 350px;
     }
 
     .content-items, .image-content {
@@ -125,7 +124,7 @@ body {
         height: 300px;
     }
     
-    .image-content img {
+    .image-overlay, .image-content img {
         border-top-left-radius: 0.5rem;
         border-bottom-right-radius: 0;
     }
